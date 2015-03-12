@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile files('libs/robotium-solo-5.0.2-SNAPSHOT.jar')
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "course.labs.intentslab"
+        minSdkVersion 13
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+}
